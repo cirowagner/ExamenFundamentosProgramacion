@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+ public class EjercicioNum3{
+   public Scanner teclado = new Scanner(System.in);
+   
+   public static void AplicacionVacunasCOVID19CWMM(){
+   chart sexo;
+   int Edad;
+  
+   System.out.println("Ingrese la Edad de la persona");
+   Edad = teclado.nextInt();
+   System.out.println("Ingrese el Sexo de la persona");
+   System.out.println("Masculino: M");
+   System.out.println("Femenino: F");
+   sexo = teclado.nextLine();
+   
+   if(Edad>=70){
+    System.out.println("Administrar vacuna tipo C");
+    }else if (Edad>=16 && Edad<=69){
+      if(sexo=("F")){
+      System.out.println("Administrar vacuna tipo B");
+     }else{
+      System.out.println("Administrar vacuna tipo A");
+     }else{
+      System.out.println("Administrar vacuna tipo A");
+   }
+    
+}
+   

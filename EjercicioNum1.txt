@@ -1,0 +1,23 @@
+public class EJERCIO_1{
+  public static void main(String args[]){
+
+   System.out.println("Ingre las notas obtenidas");
+   System.out.println("NOTA 1:");
+   Nota1 = teclado.nextLine();
+   System.out.println("NOTA 2:");
+   Nota2 = teclado.nextLine();
+   System.out.println("NOTA 3:"); 
+   Nota3 = teclado.nextLine();
+   System.out.println("NOTA 4:");
+   Nota4 = teclado.nextLine();
+  
+   int Nota1 = Nota1*0.15;
+   int Nota2 = Nota2*0.20;
+   int Nota3 = Nota3*0.25;
+   int Nota4 = Nota4*0.40;
+
+   NotaFinal = Nota1+Nota2+Nota3+Nota4
+   
+   System.out.println("La nota final de curo de F.P es de: " + NotaFinal)
+ } 
+}

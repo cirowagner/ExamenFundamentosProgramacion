@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class EjercicioNum4{
+  piblic static void main(String args[]){
+   
+   Scanner teclado = new Scanner(System.in);
+   int ValorA=0, ValorB=0, Resultado=0;
+   int operacion=0;
+   
+   System.out.println("Ingrese el Valor A";)
+   ValorA = teclado.nestInt;
+   System.out.println("Ingrese el Valor A";)
+   ValorB = teclado.nestInt;
+   System.out.println("Ingrese la operacion que desea realizar";)
+   System.out.println("Suma :1";)
+   System.out.println"Resta :2";
+   System.out.println"Multiplicación : 	3";
+   System.out.println"Divición :4";
+   System.out.println"Potencia :5";
+   Operacion = teclado.nestInt;
+
+   switch(Operacion){
+    case 1: Resultado = ValorA + ValorB;
+            break;
+    case 2: Resultado = ValorA - ValorB;
+            break;
+    case 3: Resultado = ValorA * ValorB;
+            break;
+    case 4: Resultado = ValorA / ValorB;
+            break;
+
+    default: System.out.println("Por favor ingrese el número de una de las operaciónes precentadas");
+             break;
+  }
+ }
+}
