@@ -1,32 +1,30 @@
 import java.util.Scanner;
 
 public class EjercicioNum1{
+  public static Scanner teclado = new Scanner(System.in);
+  //CalcularNotaFinalCWMM
   public static void main(String args[]){
-
-   Scanner teclado = new Scanner(System.in);
-   int notaFinal = "";
-   int nota1=0, nota2=0, nota3=0, nota4=0;
-
+  //Declaramos las Variables
+   double Nota1=0, Nota2=0, Nota3=0, Nota4=0, NotaFinal =0;
+  //Datos de Entrada 
    System.out.println("Ingre las notas obtenidas");
    System.out.println("NOTA 1:");
-   nota1 = teclado.nextInt();
-
+   Nota1 = teclado.nextDouble();
    System.out.println("NOTA 2:");
-   nota2 = teclado.nextInt();
-
+   Nota2 = teclado.nextDouble();
    System.out.println("NOTA 3:"); 
-   nota3 = teclado.nextInt();
-
+   Nota3 = teclado.nextDouble();
    System.out.println("NOTA 4:");
-   nota4 = teclado.nextInt();
-  
-   nota1T = nota1 * 0.15;
-   nota2S = nota2 * 0.20;
-   nota3V = nota3 * 0.25;
-   nota4B = nota4 * 0.40;
-
-   notaFinal = nota1T+nota2S+nota3V+nota4B;
-   
-   System.out.println("La nota final de curo de F.P es de: "+ notaFinal);
+   Nota4 = teclado.nextDouble();
+   //Proceso, en esta parte obtenemos la nota final 
+   //segun el porcentaje de valor de las notas ingresadas
+   Nota1 = Nota1 * 0.15;
+   Nota2 = Nota2 * 0.20;
+   Nota3 = Nota3 * 0.25;
+   Nota4 = Nota4 * 0.40;
+ 
+   NotaFinal = Nota1 + Nota2 + Nota3 + Nota4;
+   //Datos de Salida 
+   System.out.println("La nota final de curo de F.P es de: "+ NotaFinal);
  } 
 }
